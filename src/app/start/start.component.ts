@@ -18,7 +18,7 @@ export class StartComponent implements OnInit {
   }
 
   signIn() {
-    this.router.navigate([''], { relativeTo: this.route });
+    this.router.navigate(['signin'], { relativeTo: this.route });
   }
 
 }

@@ -20,7 +20,7 @@ export class ThankyouComponent implements OnInit {
     this.name = this.signInService.getSignedInUser();
     
     setTimeout((router: Router) => {
-      this.router.navigate(['/start']);
+      this.router.navigate(['']);
     }, 3000);
   }
 }

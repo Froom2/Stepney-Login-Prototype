@@ -26,6 +26,6 @@ export class SignInComponent implements OnInit {
 
     this.signInService.addSignedInUser(this.name);
 
-    this.router.navigate(['thankyou'], { relativeTo: this.route });
+    this.router.navigate(['thankyou']);
   }
 }
