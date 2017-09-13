@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SignInComponent } from './home/signin.component';
-import { SignInService } from './home/signin.service';
+import { SignInComponent } from './signin/signin.component';
+import { SignInService } from './signin/signin.service';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StartComponent } from './start/start.component';

@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HomeComponent} from './home/home.component';
+import {SignInComponent} from './signin/signin.component';
 import {StartComponent} from './start/start.component';
 import {ThankyouComponent} from './thankyou/thankyou.component';
 
 const appRoutes: Routes = [
     { path: '', component: StartComponent},
-    { path: 'start', component: StartComponent },
+    { path: 'signin', component: SignInComponent },
     { path: 'thankyou', component: ThankyouComponent}
 ]
 
