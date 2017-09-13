@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HomeService } from './home/home.service';
+import { SignInComponent } from './home/signin.component';
+import { SignInService } from './home/signin.service';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StartComponent } from './start/start.component';
@@ -12,7 +12,7 @@ import { StartComponent } from './start/start.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    SignInComponent,
     ThankyouComponent,
     StartComponent
   ],
@@ -22,7 +22,7 @@ import { StartComponent } from './start/start.component';
     AppRoutingModule
   ],
   providers: [
-    HomeService
+    SignInService
   ],
   bootstrap: [AppComponent]
 })

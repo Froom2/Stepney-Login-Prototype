@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { HomeService } from './home.service';
+import { SignInService } from './signin.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-signin',
+  templateUrl: './signin.component.html',
+  styleUrls: ['./signin.component.css']
 })
-export class HomeComponent implements OnInit {
+export class SignInComponent implements OnInit {
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private homeService: HomeService
+    private signInService: SignInService
   ) { }
 
   ngOnInit() {
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   signIn(form: NgForm) {
     this.name = form.value.nameInput;
 
-    this.homeService.addSignedInUser(this.name);
+    this.signInService.addSignedInUser(this.name);
 
     this.router.navigate(['thankyou'], { relativeTo: this.route });
   }

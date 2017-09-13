@@ -5,7 +5,7 @@ import {StartComponent} from './start/start.component';
 import {ThankyouComponent} from './thankyou/thankyou.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent},
+    { path: '', component: StartComponent},
     { path: 'start', component: StartComponent },
     { path: 'thankyou', component: ThankyouComponent}
 ]

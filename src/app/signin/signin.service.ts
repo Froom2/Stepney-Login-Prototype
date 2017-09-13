@@ -1,4 +1,4 @@
-export class HomeService {
+export class SignInService {
     signedInUser: string;
 
     addSignedInUser(signedInUser: string) {

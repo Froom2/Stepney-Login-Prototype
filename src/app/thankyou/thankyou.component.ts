@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../home/home.service'
+import { SignInService } from '../signin/signin.service'
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,12 +12,12 @@ export class ThankyouComponent implements OnInit {
   name: string;
 
   constructor(
-    private homeService: HomeService,
+    private signInService: SignInService,
     private router: Router
   ) { }
 
   ngOnInit() {
-    this.name = this.homeService.getSignedInUser();
+    this.name = this.signInService.getSignedInUser();
     
     setTimeout((router: Router) => {
       this.router.navigate(['/start']);
